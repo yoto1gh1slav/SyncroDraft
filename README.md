@@ -1,5 +1,7 @@
 SyncroDraft: A Web-AR Framework for Interactive Engineering Visualization
 
+DOI: 10.5281/zenodo.18874482
+
 🚀 Overview
 
 SyncroDraft is a low-cost, high-efficiency workflow designed to bridge the gap between traditional 2D technical drawings and interactive 3D digital twins. By leveraging CAD modeling, cloud-based hosting, and QR technology, this framework enables "Zero-Friction" Augmented Reality (AR) visualization directly in a mobile browser.
