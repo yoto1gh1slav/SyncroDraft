@@ -53,18 +53,15 @@ This methodology is shared under the MIT License.
 ## 📦 Насладете се на модела в 3D и AR
 Можете да разгледате нашия основен детайл тук:
 
-<!-- Зареждане на библиотеката за 3D визуализация -->
 <script type="module" src="https://ajax.googleapis.com"></script>
 
-<!-- Прозорецът с вашия модел -->
 <model-viewer src="https://raw.githubusercontent.com"
               ar
               ar-modes="webxr scene-viewer quick-look"
               camera-controls
-              tone-mapping="neutral"
-              poster="poster.webp"
               shadow-intensity="1"
               auto-rotate
-              style="width: 100%; height: 500px; background-color: #f0f0f0; border-radius: 10px;">
+              style="width: 100%; height: 500px; background-color: #eee;">
 </model-viewer>
+
 
