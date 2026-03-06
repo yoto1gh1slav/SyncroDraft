@@ -50,8 +50,14 @@ This methodology is shared under the MIT License.
 
 ---
 
-## 📦 Насладете се на модела в 3D и AR
-Можете да разгледате нашия основен детайл тук:
+# SyncroDraft: Мисия AR 🚀
+
+Тук постави твоите обяснения за проекта... (можеш да ги копираш и поставиш тук)
+
+---
+
+### 📦 Насладете се на модела в 3D и AR
+*Можете да разгледате детайла от SolidWorks интерактивно:*
 
 <script type="module" src="https://ajax.googleapis.com"></script>
 
@@ -61,7 +67,10 @@ This methodology is shared under the MIT License.
               camera-controls
               shadow-intensity="1"
               auto-rotate
-              style="width: 100%; height: 500px; background-color: #eee;">
+              style="width: 100%; height: 500px; background-color: #f0f0f0; border-radius: 10px;">
 </model-viewer>
+
+---
+
 
 
