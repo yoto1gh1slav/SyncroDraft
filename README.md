@@ -38,10 +38,9 @@ SyncroDraft is a low-cost, high-efficiency workflow designed to bridge the gap b
 
 This methodology is shared under the MIT License.
 
-<script type="module" src="https://ajax.googleapis.com"></script>
+---
+### 📦 Интерактивен 3D преглед (AR)
+[![Виж в 3D](https://img.shields.io)](https://github.com)
 
-<model-viewer src="https://raw.githubusercontent.com"
-              ar ar-modes="webxr scene-viewer quick-look"
-              camera-controls shadow-intensity="1" auto-rotate
-              style="width: 100%; height: 500px; background-color: #f8f9fa; border: 1px solid #ddd; border-radius: 10px;">
-</model-viewer>
+*Кликнете върху бутона по-горе, за да отворите детайла от SolidWorks в официалния 3D визуализатор на GitHub. Там можете да го въртите, мащабирате и разглеждате от всички страни без допълнителен софтуер.*
+---
