@@ -49,3 +49,18 @@ This methodology is shared under the MIT License.
 3. **Разрешете достъп**: Ако браузърът поиска разрешение за камерата, потвърдете го, за да активирате функциите за добавена реалност (AR).
 
 ---
+
+## 📦 Насладете се на модела в 3D и AR
+Можете да разгледате нашия основен детайл тук:
+
+<script type="module" src="https://unpkg.com"></script>
+
+<model-viewer src="https://raw.githubusercontent.com"
+              ar
+              ar-modes="webxr scene-viewer quick-look"
+              camera-controls
+              poster="poster.webp"
+              shadow-intensity="1"
+              auto-rotate
+              style="width: 100%; height: 500px;">
+</model-viewer>
