@@ -40,4 +40,5 @@ This methodology is shared under the MIT License.
 
 ---
 ### 📦 Интерактивен 3D преглед (AR)
-Кликнете тук за 3D преглед: https://github.com
+Кликнете тук за 3D преглед: https://github.com:
+/yoto1gh1slav/SyncroDraft/blob/main/SyncroDraft.stl
