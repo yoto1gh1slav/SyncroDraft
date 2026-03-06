@@ -38,6 +38,3 @@ SyncroDraft is a low-cost, high-efficiency workflow designed to bridge the gap b
 
 This methodology is shared under the MIT License.
 
----
-### 📦 Интерактивен 3D преглед (AR)
-[Кликнете тук за AR преглед на телефона](./detal1.glb)
