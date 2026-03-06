@@ -40,4 +40,4 @@ This methodology is shared under the MIT License.
 
 ---
 ### 📦 Интерактивен 3D преглед (AR)
-[ВИЖ МОДЕЛА В 3D](./SyncroDraft.stl)
+[Кликнете тук за AR преглед на телефона](./detal1.glb)
