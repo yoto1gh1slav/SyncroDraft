@@ -39,38 +39,12 @@ SyncroDraft is a low-cost, high-efficiency workflow designed to bridge the gap b
 This methodology is shared under the MIT License.
 
 ---
-
-## 🚀 Бърз старт (Quick Start)
-
-За да стартирате интерактивната визуализация на **SyncroDraft**, следвайте тези стъпки:
-
-1. **Изтеглете проекта**: Кликнете на зеления бутон **Code** горе вдясно и изберете **Download ZIP**, след което разархивирайте папката.
-2. **Отворете файла**: Просто отворете файла `index.html` във вашия уеб браузър (препоръчително Chrome или Firefox).
-3. **Разрешете достъп**: Ако браузърът поиска разрешение за камерата, потвърдете го, за да активирате функциите за добавена реалност (AR).
-
----
-
-# SyncroDraft: Мисия AR 🚀
-
-Тук постави твоите обяснения за проекта... (можеш да ги копираш и поставиш тук)
-
----
-
-### 📦 Насладете се на модела в 3D и AR
-*Можете да разгледате детайла от SolidWorks интерактивно:*
-
+### 📦 Интерактивен 3D модел (AR)
 <script type="module" src="https://ajax.googleapis.com"></script>
 
 <model-viewer src="https://raw.githubusercontent.com"
-              ar
-              ar-modes="webxr scene-viewer quick-look"
-              camera-controls
-              shadow-intensity="1"
-              auto-rotate
-              style="width: 100%; height: 500px; background-color: #f0f0f0; border-radius: 10px;">
+              ar ar-modes="webxr scene-viewer quick-look"
+              camera-controls shadow-intensity="1" auto-rotate
+              style="width: 100%; height: 500px; background-color: #f0f0f0; border-radius: 15px;">
 </model-viewer>
-
 ---
-
-
-
