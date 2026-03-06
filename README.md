@@ -37,4 +37,3 @@ SyncroDraft is a low-cost, high-efficiency workflow designed to bridge the gap b
 ⚖️ License
 
 This methodology is shared under the MIT License.
-
