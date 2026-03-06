@@ -37,3 +37,10 @@ SyncroDraft is a low-cost, high-efficiency workflow designed to bridge the gap b
 ⚖️ License
 
 This methodology is shared under the MIT License.
+---
+### 📦 Стартирай 3D прегледа тук:
+[![Виж в 3D](https://img.shields.io)](./detal1.STL)
+
+*Кликнете върху синия бутон по-горе, за да разгледате детайла директно в GitHub.*
+---
+
