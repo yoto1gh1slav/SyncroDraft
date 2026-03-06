@@ -40,7 +40,8 @@ This methodology is shared under the MIT License.
 
 ---
 ### 📦 Интерактивен 3D преглед (AR)
-[![Виж в 3D](https://img.shields.io)](https://github.com)
+[![Виж в 3D](https://img.shields.io)]
+(https://github.com)
 
 *Кликнете върху бутона по-горе, за да отворите детайла от SolidWorks в официалния 3D визуализатор на GitHub. Там можете да го въртите, мащабирате и разглеждате от всички страни без допълнителен софтуер.*
 ---
