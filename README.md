@@ -1,4 +1,4 @@
-# SyncroDraft
+# SyncroDraft-Mission AR
 
 [![DOI](https://zenodo.org)](https://doi.org)
 
@@ -48,9 +48,7 @@ Access the interactive engineering visualization directly in your browser:
 *Note: This link provides a seamless, app-free viewing experience for both desktop and mobile devices.*
 
 ---
-### 📦 Стартирай 3D прегледа тук:
+### 📦 Start the 3D preview here:
 [![Виж в 3D](https://img.shields.io)](./detal1.STL)
 
-*Кликнете върху синия бутон по-горе, за да разгледате детайла директно в GitHub.*
----
-
+**********************
