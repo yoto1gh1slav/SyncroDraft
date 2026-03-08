@@ -37,6 +37,16 @@ SyncroDraft is a low-cost, high-efficiency workflow designed to bridge the gap b
 ⚖️ License
 
 This methodology is shared under the MIT License.
+
+---
+
+## 🌐 Live Web-AR Experience
+Access the interactive engineering visualization directly in your browser:
+
+👉 **[Launch SyncroDraft Web-AR](https://yoto1gh1slav.github.io/SyncroDraft/)**
+
+*Note: This link provides a seamless, app-free viewing experience for both desktop and mobile devices.*
+
 ---
 ### 📦 Стартирай 3D прегледа тук:
 [![Виж в 3D](https://img.shields.io)](./detal1.STL)
