@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org)](https://doi.org)
 
-SyncroDraft: A Web-AR Framework for Interactive Engineering Visualization
+SyncroDraft-Mission AR: A Web-AR Framework for Interactive Engineering Visualization
 
 DOI: 10.5281/zenodo.18874482
 
