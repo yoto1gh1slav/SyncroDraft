@@ -1,34 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>SyncroDraft: Mission AR 🚀</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SyncroDraft: Mission AR 🚀</title>
     <script type="module" src="https://ajax.googleapis.com"></script>
     <style>
-        body { margin: 0; font-family: sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; background-color: #f4f4f9; }
-        model-viewer { width: 95%; height: 85%; background-color: #ffffff; border-radius: 15px; box-shadow: 0 5px 25px rgba(0,0,0,0.1); }
-        h1 { color: #2c3e50; font-size: 1.4rem; margin-bottom: 10px; }
-        .footer { margin-top: 10px; font-size: 0.8rem; color: #7f8c8d; }
+        body { margin: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; background: #eee; font-family: sans-serif; }
+        model-viewer { width: 90%; height: 80%; background: white; border-radius: 10px; }
     </style>
 </head>
 <body>
     <h1>SyncroDraft: Mission AR 🚀</h1>
 
-    <!-- ПЪЛЕН ПЪТ ДО ДЕТАЙЛА -->
-    <model-viewer src="https://raw.githubusercontent.com" 
-                  ar ar-modes="webxr scene-viewer quick-look" 
-                  camera-controls 
-                  shadow-intensity="1" 
-        src="https://raw.githubusercontent.com"
-                  auto-rotate 
-                  style="width: 90%; height: 75%;">
-        <button slot="ar-button" style="background-color: #3498db; color: white; border: none; border-radius: 20px; padding: 10px 20px; position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); cursor: pointer;">
-            ✨ View in AR
-        </button>
+    <!-- ТОВА Е ВАЖНИЯТ РЕД С ПЪТЯ -->
+    <model-viewer 
+        src="detal1.stl" 
+        ar ar-modes="webxr scene-viewer quick-look" 
+        camera-controls auto-rotate shadow-intensity="1">
     </model-viewer>
 
-    <div class="footer">Engineering Visualization by Yordanka</div>
+    <p>Engineering Visualization by Yordanka</p>
 </body>
 </html>
-
