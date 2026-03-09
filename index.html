@@ -4,28 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SyncroDraft: Мисия AR</title>
-    <!-- Зареждаме Google Model Viewer за 3D визуализация -->
     <script type="module" src="https://ajax.googleapis.com"></script>
     <style>
-        body { margin: 0; background-color: #f4f4f4; font-family: sans-serif; display: flex; flex-direction: column; align-items: center; }
-        header { padding: 20px; text-align: center; background: #333; color: white; width: 100%; }
-        model-viewer { width: 90%; height: 70vh; margin-top: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-        .footer { margin-top: 20px; font-size: 0.9em; color: #666; }
+        body { margin: 0; background-color: #222; color: white; font-family: sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; }
+        model-viewer { width: 100%; height: 80vh; background-color: #333; --poster-color: transparent; }
+        .info { padding: 10px; text-align: center; }
+        .btn { color: #007bff; text-decoration: none; border: 1px solid #007bff; padding: 5px 10px; border-radius: 4px; }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>SyncroDraft: Мисия AR</h1>
-    </header>
+    <div class="info">
+        <h2>SyncroDraft: 3D Преглед</h2>
+    </div>
 
-    <!-- Важно: src="detal1.stl" трябва да съвпада точно с името на файла в GitHub -->
-   <model-viewer src="detal1.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" auto-rotate> </model-viewer>
+    <!-- Използваме ./ за да сме сигурни, че търси в същата папка -->
+    <model-viewer 
+        src="./detal1.glb" 
+        ar 
+        ar-modes="webxr scene-viewer quick-look" 
+        camera-controls 
+        auto-rotate 
+        shadow-intensity="1"
+        alt="3D модел">
+        <div slot="poster" style="color: white;">Зареждане на 3D модела... моля изчакайте</div>
+    </model-viewer>
 
-    <div class="footer">
-        <p>Ако моделът не се появява, провери дали файлът <b>detal1.stl</b> е качен в същата папка.</p>
+    <div class="info">
+        <p>Ако не виждаш нищо: <a href="./detal1.glb" class="btn">Изтегли GLB файла</a></p>
     </div>
 
 </body>
 </html>
-
