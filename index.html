@@ -4,31 +4,29 @@
     <title>SyncroDraft: Mission AR 🚀</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Зареждане на 3D двигателя -->
     <script type="module" src="https://ajax.googleapis.com"></script>
     <style>
-        body { margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; background-color: #f0f2f5; }
-        model-viewer { width: 95%; height: 85vh; background-color: #ffffff; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); --poster-color: transparent; }
-        .header { position: absolute; top: 20px; text-align: center; z-index: 10; width: 100%; }
-        h1 { margin: 0; color: #1a73e8; font-size: 1.5rem; text-shadow: 0 1px 2px rgba(0,0,0,0.1); }
-        .footer { position: absolute; bottom: 15px; color: #5f6368; font-size: 0.9rem; }
+        body { margin: 0; font-family: sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; background-color: #f4f4f9; }
+        model-viewer { width: 95%; height: 85%; background-color: #ffffff; border-radius: 15px; box-shadow: 0 5px 25px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; font-size: 1.4rem; margin-bottom: 10px; }
+        .footer { margin-top: 10px; font-size: 0.8rem; color: #7f8c8d; }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>SyncroDraft: Mission AR 🚀</h1>
-    </div>
+    <h1>SyncroDraft: Mission AR 🚀</h1>
 
-    <!-- Твоят детайл от SolidWorks се зарежда тук -->
-  <model-viewer src="https://raw.githubusercontent.com" 
-              ar ar-modes="webxr scene-viewer quick-look" 
-              camera-controls shadow-intensity="1" auto-rotate 
-              style="width: 100%; height: 100%;">
-</model-viewer>
+    <!-- ПЪЛЕН ПЪТ ДО ДЕТАЙЛА -->
+    <model-viewer src="https://raw.githubusercontent.com" 
+                  ar ar-modes="webxr scene-viewer quick-look" 
+                  camera-controls 
+                  shadow-intensity="1" 
+                  auto-rotate 
+                  style="width: 90%; height: 75%;">
+        <button slot="ar-button" style="background-color: #3498db; color: white; border: none; border-radius: 20px; padding: 10px 20px; position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); cursor: pointer;">
+            ✨ View in AR
+        </button>
+    </model-viewer>
+
     <div class="footer">Engineering Visualization by Yordanka</div>
 </body>
 </html>
-
-
-
-
