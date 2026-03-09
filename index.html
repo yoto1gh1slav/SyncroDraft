@@ -1,7 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SyncroDraft: Мисия AR</title>
+    <!-- Зареждаме Google Model Viewer за 3D визуализация -->
+    <script type="module" src="https://ajax.googleapis.com"></script>
+    <style>
+        body { margin: 0; background-color: #f4f4f4; font-family: sans-serif; display: flex; flex-direction: column; align-items: center; }
+        header { padding: 20px; text-align: center; background: #333; color: white; width: 100%; }
+        model-viewer { width: 90%; height: 70vh; margin-top: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .footer { margin-top: 20px; font-size: 0.9em; color: #666; }
+    </style>
+</head>
 <body>
-    <h1>ТЕСТ: SyncroDraft работи!</h1>
-    <p>Ако виждаш това, сайтът е онлайн. Сега качи файла detal1.stl.</p>
+
+    <header>
+        <h1>SyncroDraft: Мисия AR</h1>
+    </header>
+
+    <!-- Важно: src="detal1.stl" трябва да съвпада точно с името на файла в GitHub -->
+    <model-viewer src="detal1.stl" 
+                  alt="3D модел на детайл" 
+                  auto-rotate 
+                  camera-controls 
+                  ar 
+                  shadow-intensity="1">
+        <div id="lazy-load" slot="poster">Зареждане на 3D детайл...</div>
+    </model-viewer>
+
+    <div class="footer">
+        <p>Ако моделът не се появява, провери дали файлът <b>detal1.stl</b> е качен в същата папка.</p>
+    </div>
+
 </body>
 </html>
