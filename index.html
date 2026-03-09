@@ -1,29 +1,21 @@
 <!DOCTYPE html>
-<html lang="bg">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>SyncroDraft: Мисия AR</title>
-    <!-- Използваме Google Model Viewer - по-лек и модерен -->
     <script type="module" src="https://ajax.googleapis.com"></script>
-    <style>
-        body { margin: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; background: #f3f3f3; font-family: sans-serif; }
-        model-viewer { width: 100%; height: 80%; background-color: #eee; }
-        .controls { padding: 20px; text-align: center; }
-        .btn { padding: 10px 20px; background: #007bff; color: white; text-decoration: none; border-radius: 5px; }
-    </style>
 </head>
-<body>
+<body style="margin: 0; background: #222; color: white; text-align: center; font-family: Arial;">
 
-    <model-viewer src="detal1.stl" auto-rotate camera-controls shadow-intensity="1" alt="3D Model">
-        <div slot="poster" style="display:flex; align-items:center; justify-content:center; height:100%;">
-            <p>Зареждане на 3D модел...</p>
-        </div>
+    <h1>SyncroDraft: Мисия AR</h1>
+    
+    <!-- Показва модела. Ако файлът липсва, ще видиш само заглавието -->
+    <model-viewer src="detal1.stl" camera-controls auto-rotate shadow-intensity="1" style="width: 100%; height: 500px;">
     </model-viewer>
 
-    <div class="controls">
-        <h3>SyncroDraft: Мисия AR</h3>
-        <p>Ако моделът не се вижда горе, използвай бутона:</p>
-        <a href="detal1.stl" class="btn">Изтегли detal1.stl</a>
+    <div style="margin-top: 20px;">
+        <p>Ако не виждаш модела, провери дали файлът <b>detal1.stl</b> е качен в GitHub.</p>
+        <a href="detal1.stl" style="color: #007bff;">Директен линк към файла</a>
     </div>
 
 </body>
