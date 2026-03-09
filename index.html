@@ -20,14 +20,7 @@
     </header>
 
     <!-- Важно: src="detal1.stl" трябва да съвпада точно с името на файла в GitHub -->
-    <model-viewer src="detal1.stl" 
-                  alt="3D модел на детайл" 
-                  auto-rotate 
-                  camera-controls 
-                  ar 
-                  shadow-intensity="1">
-        <div id="lazy-load" slot="poster">Зареждане на 3D детайл...</div>
-    </model-viewer>
+   <model-viewer src="detal1.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" auto-rotate> </model-viewer>
 
     <div class="footer">
         <p>Ако моделът не се появява, провери дали файлът <b>detal1.stl</b> е качен в същата папка.</p>
@@ -35,3 +28,4 @@
 
 </body>
 </html>
+
