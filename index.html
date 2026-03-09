@@ -1,10 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="refresh" content="0; url=detal1.stl">
-    <title>Redirecting to 3D Model</title>
+    <title>SyncroDraft: Мисия AR - Преглед на модел</title>
+    <!-- Зареждаме библиотеката за 3D визуализация -->
+    <script src="https://online3dviewer.com"></script>
+    <style>
+        body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #f0f0f0; }
+        #viewer { width: 100%; height: 100vh; }
+    </style>
 </head>
 <body>
-    <p>Пренасочване към модела... Ако не зареди автоматично, <a href="detal1.stl">кликни тук</a>.</p>
+
+    <div id="viewer"></div>
+
+    <script>
+        window.onload = function () {
+            // Инициализираме viewer-а в елемента с id "viewer"
+            const parentDiv = document.getElementById ('viewer');
+            const viewer = new OV.EmbeddedViewer (parentDiv, {
+                backgroundColor: new OV.RGBAColor (240, 240, 240, 255),
+                edgeSettings: new OV.EdgeSettings (false, new OV.RGBColor (0, 0, 0), 1)
+            });
+
+            // ЗАРЕЖДАНЕ: Увери се, че detal1.stl е в същата папка като index.html
+            viewer.LoadModelFromUrlList (['detal1.stl']);
+        };
+    </script>
+
 </body>
 </html>
