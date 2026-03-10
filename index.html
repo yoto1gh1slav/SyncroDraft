@@ -1,39 +1,41 @@
 <!DOCTYPE html>
-<html lang="bg">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SyncroDraft: Мисия AR</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="module" src="https://ajax.googleapis.com"></script>
-    <style>
-        body { margin: 0; background: #ffffff; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; font-family: sans-serif; }
-        model-viewer { width: 100%; height: 90vh; background-color: #ffffff; }
-    </style>
 </head>
-<body>
+<body style="margin: 0; background-color: #222222; color: white; font-family: sans-serif;">
 
-   <model-viewer 
-    src="final_model.glb" 
-    ar 
-    camera-controls 
-    auto-rotate 
-    shadow-intensity="2" 
-    environment-image="neutral" 
-    exposure="1"
-    bounds="tight"
-    style="width: 100%; height: 90vh; background-color: #333333;">
-    <div slot="poster" style="color: white; text-align: center; padding-top: 20%; font-family: sans-serif;">
-        🏗️ Синхронизиране на SolidWorks геометрия... <br>
-        (Ако не се вижда, опитайте Zoom Out)
-    </div>
-</model-viewer>
+    <model-viewer 
+        id="solid-model"
+        src="final_model.glb" 
+        ar 
+        camera-controls 
+        auto-rotate 
+        shadow-intensity="2" 
+        shadow-softness="0"
+        exposure="0.8"
+        environment-image="neutral"
+        style="width: 100%; height: 90vh;">
+        
+        <div slot="poster" style="text-align: center; padding-top: 50px;">
+            ⚙️ ФИНАЛНА ОБРАБОТКА... <br> (моля изчакайте 10 сек)
+        </div>
+    </model-viewer>
 
-
-
-
+    <script>
+        // Тази магия оцветява белия модел в СИВО, за да се вижда!
+        const modelViewer = document.querySelector('#solid-model');
+        modelViewer.addEventListener('load', () => {
+            const material = modelViewer.model.materials[0];
+            if (material) {
+                // Правим го сив (RGB: 0.5, 0.5, 0.5)
+                material.pbrMetallicRoughness.setBaseColorFactor([0.5, 0.5, 0.5, 1]);
+                material.pbrMetallicRoughness.setMetallicFactor(0.8); // Добавяме метален блясък
+            }
+        });
+    </script>
 
 </body>
 </html>
-
-
-
