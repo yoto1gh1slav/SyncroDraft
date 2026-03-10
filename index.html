@@ -12,17 +12,22 @@
   </head>
   <body>
 
-    <!-- Тук използваме твоя нов файл без Draco компресия -->
-    <model-viewer 
-      src="detal1.glb" 
-      ar 
-      camera-controls 
-      auto-rotate 
-      alt="3D модел от SolidWorks">
-      <div slot="poster" style="text-align: center; padding-top: 50px;">
-        ⚙️ Зареждане на детайла... Моля, изчакайте малко.
-      </div>
-    </model-viewer>
+   <model-viewer 
+    src="detal1.glb" 
+    ar 
+    camera-controls 
+    auto-rotate 
+    loading="eager"
+    interpolation-decay="200"
+    powerPreference="high-performance"
+    style="width: 100%; height: 90vh; background-color: #ffffff;">
+    <div slot="poster" style="text-align: center; padding-top: 20%; font-family: sans-serif;">
+        <p>⚙️ Обработка на SolidWorks геометрия...</p>
+        <p style="font-size: 0.8em; color: #888;">Ако файлът е голям, може да отнеме до 30 сек.</p>
+    </div>
+</model-viewer>
+
 
   </body>
 </html>
+
