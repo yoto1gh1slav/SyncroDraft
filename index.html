@@ -1,36 +1,27 @@
 <!DOCTYPE html>
-<html lang="bg">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SyncroDraft: Мисия AR</title>
     <script type="module" src="https://ajax.googleapis.com"></script>
-    <style>
-        body { margin: 0; background: #f5f5f5; font-family: sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; }
-        model-viewer { width: 100%; height: 90vh; background-color: #ffffff; }
-        h1 { position: absolute; top: 10px; font-size: 1.2rem; color: #333; z-index: 10; }
-    </style>
 </head>
-<body>
+<body style="margin: 0; background: #222; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
 
-    <h1>SyncroDraft: 3D Модел</h1>
+    <h2>SyncroDraft 3D Визуализация</h2>
 
-   <model-viewer 
-    src="https://yoto1gh1slav.github.io" 
-    ar 
-    ar-modes="webxr scene-viewer quick-look" 
-    camera-controls 
-    auto-rotate 
-    shadow-intensity="1"
-    style="width: 100%; height: 500px; display: block; margin: 0 auto;"
-    alt="3D модел от SolidWorks">
-    
-    <div slot="poster" style="color: #666; text-align: center; padding-top: 100px;">
-        ⚙️ Зареждане на детайла... <br> (моля изчакайте 5-10 сек)
-    </div>
-   </model-viewer>
-
+    <!-- Използваме директния RAW адрес на GitHub за детайла -->
+    <model-viewer 
+        src="https://raw.githubusercontent.com" 
+        ar 
+        camera-controls 
+        auto-rotate 
+        shadow-intensity="1" 
+        style="width: 100%; height: 80vh;">
+        <div slot="poster" style="text-align: center;">
+            🚀 Зареждане на детайла от сървъра... <br> 
+            Ако се бави, натиснете Ctrl + F5.
+        </div>
+    </model-viewer>
 
 </body>
 </html>
-
