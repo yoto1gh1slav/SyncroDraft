@@ -40,14 +40,6 @@ This methodology is shared under the MIT License.
 
 ---
 
-## 🌐 Live Web-AR Experience
-Access the interactive engineering visualization directly in your browser:
-
-👉 **[Launch SyncroDraft Web-AR](https://yoto1gh1slav.github.io/SyncroDraft/)**
-
-*Note: This link provides a seamless, app-free viewing experience for both desktop and mobile devices.*
-
----
 ### 📦 Start the 3D preview here:
 [![See in 3D](https://img.shields.io)](./detal1.stl)
 
