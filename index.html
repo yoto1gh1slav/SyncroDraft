@@ -6,40 +6,24 @@
     <title>SyncroDraft: Мисия AR</title>
     <script type="module" src="https://ajax.googleapis.com"></script>
     <style>
-        body { margin: 0; background-color: #222; color: white; font-family: sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; }
-        model-viewer { width: 100%; height: 80vh; background-color: #333; --poster-color: transparent; }
-        .info { padding: 10px; text-align: center; }
-        .btn { color: #007bff; text-decoration: none; border: 1px solid #007bff; padding: 5px 10px; border-radius: 4px; }
+        body { margin: 0; background: #f5f5f5; font-family: sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; }
+        model-viewer { width: 100%; height: 90vh; background-color: #ffffff; }
+        h1 { position: absolute; top: 10px; font-size: 1.2rem; color: #333; z-index: 10; }
     </style>
 </head>
 <body>
 
-    <div class="info">
-        <h2>SyncroDraft: 3D Преглед</h2>
-    </div>
+    <h1>SyncroDraft: 3D Модел</h1>
 
-    <!-- Използваме ./ за да сме сигурни, че търси в същата папка -->
-  <model-viewer 
-    src="https://raw.githubusercontent.com" 
-    ar 
-    ar-modes="webxr scene-viewer quick-look" 
-    camera-controls 
-    auto-rotate 
-    shadow-intensity="1"
-    style="width: 100%; height: 600px;"
-    alt="3D модел на SyncroDraft">
-    <div slot="poster" style="color: white; text-align: center; padding-top: 50px;">
-        🚀 Подготовка на 3D визуализацията... <br> (ако не зареди до 15 сек, проверете файла)
-    </div>
+    <model-viewer 
+        src="detal1.glb" 
+        ar 
+        ar-modes="webxr scene-viewer quick-look" 
+        camera-controls 
+        auto-rotate 
+        shadow-intensity="1" 
+        alt="3D детайл от SolidWorks">
     </model-viewer>
-
-
-
-    <div class="info">
-        <p>Ако не виждаш нищо: <a href="./detal1.glb" class="btn">Изтегли GLB файла</a></p>
-    </div>
 
 </body>
 </html>
-
-
