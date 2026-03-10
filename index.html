@@ -1,34 +1,29 @@
 <!DOCTYPE html>
-<html lang="bg">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SyncroDraft: Мисия AR</title>
     <script type="module" src="https://ajax.googleapis.com"></script>
     <style>
-        body { margin: 0; background: #ffffff; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; font-family: sans-serif; }
-        model-viewer { width: 100%; height: 90vh; }
-        .loading-text { position: absolute; top: 50%; color: #555; }
+        body { margin: 0; background: #ffffff; }
+        model-viewer { width: 100%; height: 100vh; display: block; }
     </style>
 </head>
 <body>
 
+    <!-- Използваме директно името, GitHub Pages ще го намери само -->
     <model-viewer 
-    src="https://raw.githubusercontent.com" 
-    ar 
-    camera-controls 
-    auto-rotate 
-    shadow-intensity="1"
-    camera-orbit="0deg 75deg 105%"
-    min-camera-orbit="auto auto auto"
-    max-camera-orbit="auto auto auto"
-    style="width: 100%; height: 90vh;">
-    <div slot="poster" style="text-align: center; padding-top: 50px; color: #555;">
-        ⚙️ Центриране на SolidWorks геометрия... <br> (моля изчакайте 10-15 сек)
-    </div>
-</model-viewer>
-
+        src="detal3d.glb" 
+        ar 
+        camera-controls 
+        auto-rotate 
+        shadow-intensity="1"
+        bounds="tight">
+        <div slot="poster" style="text-align: center; padding-top: 50px; font-family: Arial;">
+            ⚙️ Зареждане на детайла от SolidWorks...
+        </div>
+    </model-viewer>
 
 </body>
 </html>
-
