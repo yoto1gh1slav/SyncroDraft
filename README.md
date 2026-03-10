@@ -49,5 +49,5 @@ This methodology is shared under the MIT License.
 *Click the blue button above to view the detail directly on GitHub.*
 ---
 ## 🚀 Live 3D Preview
-View the model here: [https://yoto1gh1slav.github.io](https://yoto1gh1slav.github.io)
+View the model here: [https://yoto1gh1slav.github.io)
 
