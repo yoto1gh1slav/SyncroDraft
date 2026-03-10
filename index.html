@@ -2,31 +2,19 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SyncroDraft: Мисия AR</title>
     <script type="module" src="https://ajax.googleapis.com"></script>
-    <style>
-        body { margin: 0; background: #ffffff; }
-        model-viewer { width: 100%; height: 100vh; display: block; }
-    </style>
 </head>
-<body>
+<body style="margin: 0; background: #ffffff;">
 
-    <!-- Използваме директно името, GitHub Pages ще го намери само -->
     <model-viewer 
-    src="detal3d.glb" 
-    ar 
-    camera-controls 
-    auto-rotate 
-    shadow-intensity="1"
-    bounds="tight"
-    style="width: 100%; height: 100vh; background-color: #ffffff;">
-    <div slot="poster" style="text-align: center; padding-top: 50px; font-family: Arial;">
-        ⚙️ Зареждане на детайла от SolidWorks... <br>
-        (Ако е празно, опитайте Zoom Out с пръсти)
-    </div>
-</model-viewer>
-
+        src="final_model.glb" 
+        ar 
+        camera-controls 
+        auto-rotate 
+        shadow-intensity="1"
+        style="width: 100%; height: 100vh;">
+    </model-viewer>
 
 </body>
 </html>
