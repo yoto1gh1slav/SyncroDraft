@@ -14,16 +14,19 @@
 
     <!-- Използваме директно името, GitHub Pages ще го намери само -->
     <model-viewer 
-        src="detal3d.glb" 
-        ar 
-        camera-controls 
-        auto-rotate 
-        shadow-intensity="1"
-        bounds="tight">
-        <div slot="poster" style="text-align: center; padding-top: 50px; font-family: Arial;">
-            ⚙️ Зареждане на детайла от SolidWorks...
-        </div>
-    </model-viewer>
+    src="detal3d.glb" 
+    ar 
+    camera-controls 
+    auto-rotate 
+    shadow-intensity="1"
+    bounds="tight"
+    style="width: 100%; height: 100vh; background-color: #ffffff;">
+    <div slot="poster" style="text-align: center; padding-top: 50px; font-family: Arial;">
+        ⚙️ Зареждане на детайла от SolidWorks... <br>
+        (Ако е празно, опитайте Zoom Out с пръсти)
+    </div>
+</model-viewer>
+
 
 </body>
 </html>
