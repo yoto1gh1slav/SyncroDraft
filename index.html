@@ -5,30 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SyncroDraft: Мисия AR</title>
     <script type="module" src="https://ajax.googleapis.com"></script>
-    <style>
-        body { margin: 0; background: #222; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; font-family: sans-serif; }
-        model-viewer { width: 100%; height: 90vh; --poster-color: transparent; }
-    </style>
 </head>
-<body>
+<body style="margin: 0; background-color: #f0f0f0; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
 
+    <h2 style="font-family: Arial; color: #333;">SyncroDraft 3D Визуализация</h2>
+
+    <!-- Използваме директния линк към файла в хранилището -->
     <model-viewer 
-        src="super_model.glb" 
+        src="https://raw.githubusercontent.com" 
         ar 
         camera-controls 
         auto-rotate 
-        shadow-intensity="2"
-        exposure="1.5"
+        shadow-intensity="1"
+        exposure="1.2"
         environment-image="neutral"
-        bounds="tight"
-        alt="3D модел от SolidWorks">
-        <div slot="poster" style="text-align: center; padding-top: 50px;">
-            ⚙️ Синхронизиране на super_model.glb... <br>
-            (Моля, изчакайте 5-10 сек)
+        style="width: 100%; height: 80vh;">
+        <div slot="poster" style="text-align: center; padding-top: 50px; font-family: Arial;">
+            🚀 Свързване със сървъра на SyncroDraft... <br> (моля изчакайте 10-15 сек)
         </div>
     </model-viewer>
-
-    <div style="padding-bottom: 10px;">SyncroDraft: Мисия AR - Онлайн</div>
 
 </body>
 </html>
