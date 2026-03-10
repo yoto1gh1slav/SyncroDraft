@@ -3,39 +3,19 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SyncroDraft: Мисия AR</title>
     <script type="module" src="https://ajax.googleapis.com"></script>
 </head>
-<body style="margin: 0; background-color: #222222; color: white; font-family: sans-serif;">
+<body style="margin: 0; background-color: #f0f0f0;">
 
     <model-viewer 
-        id="solid-model"
-        src="final_model.glb" 
+        src="super_model.glb" 
         ar 
         camera-controls 
         auto-rotate 
-        shadow-intensity="2" 
-        shadow-softness="0"
-        exposure="0.8"
-        environment-image="neutral"
-        style="width: 100%; height: 90vh;">
-        
-        <div slot="poster" style="text-align: center; padding-top: 50px;">
-            ⚙️ ФИНАЛНА ОБРАБОТКА... <br> (моля изчакайте 10 сек)
-        </div>
+        shadow-intensity="1"
+        style="width: 100%; height: 100vh;">
     </model-viewer>
-
-    <script>
-        // Тази магия оцветява белия модел в СИВО, за да се вижда!
-        const modelViewer = document.querySelector('#solid-model');
-        modelViewer.addEventListener('load', () => {
-            const material = modelViewer.model.materials[0];
-            if (material) {
-                // Правим го сив (RGB: 0.5, 0.5, 0.5)
-                material.pbrMetallicRoughness.setBaseColorFactor([0.5, 0.5, 0.5, 1]);
-                material.pbrMetallicRoughness.setMetallicFactor(0.8); // Добавяме метален блясък
-            }
-        });
-    </script>
 
 </body>
 </html>
