@@ -11,17 +11,19 @@
     <h2>SyncroDraft 3D Визуализация</h2>
 
     <model-viewer 
-        src="https://yoto1gh1slav.github.io" 
-        ar 
-        camera-controls 
-        auto-rotate 
-        shadow-intensity="1" 
-        style="width: 100%; height: 80vh;">
-        <div slot="poster" style="text-align: center; padding-top: 50px;">
-            ⚙️ Зареждане на детайла от сървъра... <br> 
-            (моля изчакайте 15-20 сек)
-        </div>
-    </model-viewer>
+    src="./super_model.glb" 
+    ar 
+    camera-controls 
+    auto-rotate 
+    crossorigin="anonymous"
+    shadow-intensity="1" 
+    style="width: 100%; height: 80vh;">
+    <div slot="poster" style="text-align: center; color: white; padding-top: 50px;">
+        🚀 Синхронизиране на 3D геометрията... <br> 
+        (ако се забави, опитайте Ctrl + F5)
+    </div>
+</model-viewer>
 
 </body>
 </html>
+
