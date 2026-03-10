@@ -49,7 +49,7 @@ Access the interactive engineering visualization directly in your browser:
 
 ---
 ### 📦 Start the 3D preview here:
-[![See in 3D](https://img.shields.io)](./detal1.STL)
+[![See in 3D](https://img.shields.io)](./detal1.stl)
 
 *Click the blue button above to view the detail directly on GitHub.*
 ---
