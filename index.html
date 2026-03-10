@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="utf-8">
     <title>SyncroDraft: Мисия AR</title>
-    <script type="module" src="https://ajax.googleapis.com"></script>
-</head>
-<body style="margin: 0; background: #222; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
+    <!-- Нов адрес на скрипта за по-добра съвместимост -->
+    <script type="module" src="https://unpkg.com"></script>
+    <style>
+      body { margin: 0; background: #eee; }
+      model-viewer { width: 100%; height: 100vh; display: block; }
+    </style>
+  </head>
+  <body>
 
-    <h2>SyncroDraft 3D Визуализация</h2>
+    <!-- Тук използваме твоя нов файл без Draco компресия -->
+    <model-viewer 
+      src="detal1.glb" 
+      ar 
+      camera-controls 
+      auto-rotate 
+      alt="3D модел от SolidWorks">
+      <div slot="poster" style="text-align: center; padding-top: 50px;">
+        ⚙️ Зареждане на детайла... Моля, изчакайте малко.
+      </div>
+    </model-viewer>
 
-   <!-- ТЕСТ: Замени твоя src с този на НАСА, за да проверим кода -->
-<model-viewer 
-    src="https://modelviewer.dev" 
-    ar 
-    camera-controls 
-    auto-rotate 
-    style="width: 100%; height: 80vh;">
-</model-viewer>
-
-</body>
+  </body>
 </html>
-
-
