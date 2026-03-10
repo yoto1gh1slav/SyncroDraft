@@ -11,17 +11,20 @@
 
     <!-- Използваме директния RAW адрес на GitHub за детайла -->
     <model-viewer 
-        src="https://raw.githubusercontent.com" 
-        ar 
-        camera-controls 
-        auto-rotate 
-        shadow-intensity="1" 
-        style="width: 100%; height: 80vh;">
-        <div slot="poster" style="text-align: center;">
-            🚀 Зареждане на детайла от сървъра... <br> 
-            Ако се бави, натиснете Ctrl + F5.
-        </div>
-    </model-viewer>
+    src="./detal1.glb" 
+    ar 
+    camera-controls 
+    auto-rotate 
+    shadow-intensity="1" 
+    style="width: 100%; height: 80vh;"
+    alt="3D модел на SyncroDraft">
+    <div slot="poster" style="text-align: center; color: white; padding-top: 50px;">
+        ⚙️ Обработка на 3D геометрията... <br> 
+        (моля изчакайте 10-15 секунди)
+    </div>
+</model-viewer>
+
 
 </body>
 </html>
+
