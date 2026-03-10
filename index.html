@@ -1,33 +1,28 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
-    <title>SyncroDraft: Мисия AR</title>
-    <!-- Нов адрес на скрипта за по-добра съвместимост -->
-    <script type="module" src="https://unpkg.com"></script>
-    <style>
-      body { margin: 0; background: #eee; }
-      model-viewer { width: 100%; height: 100vh; display: block; }
-    </style>
-  </head>
-  <body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="module" src="https://ajax.googleapis.com"></script>
+</head>
+<body style="margin: 0; background: #ffffff;">
 
-   <model-viewer 
-    src="detal1.glb" 
-    ar 
-    camera-controls 
-    auto-rotate 
-    loading="eager"
-    interpolation-decay="200"
-    powerPreference="high-performance"
-    style="width: 100%; height: 90vh; background-color: #ffffff;">
-    <div slot="poster" style="text-align: center; padding-top: 20%; font-family: sans-serif;">
-        <p>⚙️ Обработка на SolidWorks геометрия...</p>
-        <p style="font-size: 0.8em; color: #888;">Ако файлът е голям, може да отнеме до 30 сек.</p>
-    </div>
-</model-viewer>
+    <!-- Добавихме environment-image и exposure, за да "светнем" модела -->
+    <model-viewer 
+        src="detal1.glb" 
+        ar 
+        camera-controls 
+        auto-rotate 
+        shadow-intensity="1"
+        environment-image="neutral"
+        exposure="1.5"
+        style="width: 100%; height: 100vh;">
+        
+        <div slot="poster" style="text-align: center; margin-top: 50px; font-family: Arial;">
+            <p>🚀 Мисия AR: Зареждане...</p>
+            <p style="font-size: 12px; color: #888;">(Ако не виждате модела, файлът е празен)</p>
+        </div>
+    </model-viewer>
 
-
-  </body>
+</body>
 </html>
-
