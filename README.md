@@ -5,6 +5,7 @@
 SyncroDraft:Mission AR: A Web-AR Framework for Interactive Engineering Visualization
 
 DOI: 10.5281/zenodo.18874482
+Cite this project as: Slavcheva, Y. (2026). SyncroDraft (Version 1.0.0) [Computer software]. https://doi.org/10.5281/zenodo.18874482
 
 🚀 Overview
 
